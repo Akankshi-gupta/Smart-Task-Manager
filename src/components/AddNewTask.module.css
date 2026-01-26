@@ -1,0 +1,19 @@
+#taskInput{
+    width: 40%;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 2%;
+    font-size: 22px;
+    padding: 2%;
+}
+
+.addTaskBtn{
+    width: 11%;
+    height: 48px;
+    border-radius: 10px;
+    background: #00764b;
+    color: white;
+    border: none;
+    border: 1px solid #005a39;
+}
