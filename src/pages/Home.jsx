@@ -5,7 +5,7 @@ function HomePage(){
     return(
         <>
             <AddNewTask></AddNewTask>
-            <TasksList></TasksList>
+            <TasksList divWidth = {'homeWidth'}></TasksList>
         </>
     )
 }

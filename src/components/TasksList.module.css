@@ -1,11 +1,19 @@
 .TaskListContainer{
     border: 1px solid black;
     border-radius: 10px;
-    width: 60%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
+    height: 60vh;
+    background-color: white;
+}
+
+.statsWidth{
+    width: 100%;
+}
+
+.homeWidth{
+    width: 60%;
 }
 
 .searchBar{
@@ -48,6 +56,8 @@
     border: 1px solid rgb(180, 0, 0);
     border-radius: 50px;
     text-align: center;
+    width: 100%;
+    background-color: transparent;
 }
 
 .completed{
@@ -55,11 +65,44 @@
     border: 1px solid green;
     border-radius: 50px;
     text-align: center;
+    width: 100%;
+    background-color: transparent;
 }
 
 .in-progress{
-    color: rgb(199, 199, 0);
-    border: 1px solid rgb(199, 199, 0);
+    color: rgb(169 169 0);
+    border: 1px solid rgb(169 169 0);
     border-radius: 50px;
     text-align: center;
+    width: 100%;
+    background-color: transparent;
+}
+
+.taskNotes{
+    font-size: 18px;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin-bottom: 0;
+    /* white-space: nowrap; */
+}
+
+.taskNotes:hover {
+    -webkit-line-clamp: unset;
+    display: block;
+    overflow: visible;
+    background: #fff;
+    position: relative;
+    z-index: 5;
+}
+
+.editInput {
+  width: 100%;
+  font-size: 18px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #00764b;
+  outline: none;
 }

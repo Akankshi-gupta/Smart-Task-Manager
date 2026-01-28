@@ -1,6 +1,6 @@
 import styles from "./AddNewTask.module.css"  
 import { TaskListData } from "../store/TaskListData";
-import { useContext, useEffect, useRef } from "react";
+import { useContext, useRef } from "react";
 
 function AddNewTask() {
     let {setTaskList } = useContext(TaskListData)
