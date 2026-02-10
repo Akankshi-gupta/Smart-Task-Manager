@@ -1,10 +1,11 @@
+import { useCallback } from "react"
 import styles from "./Header.module.css"
 import {NavLink} from "react-router-dom"
 
-function Header(){
-    function toggleTheme(e) {
-        document.body.classList.toggle("dark", e.target.checked);
-    }
+function Header({darkTheme, setDarkTheme}){
+    let toggleTheme = useCallback(()=> {
+        setDarkTheme(prev => !prev)
+    },[setDarkTheme])
 
     return(
         <>
@@ -17,13 +18,18 @@ function Header(){
                     <li><NavLink to="/stats"  className={({ isActive }) =>
                         isActive ? styles.activePage : styles.pageLink
                     }>Stats</NavLink></li>
-                    <li><a href="" className={styles['pagesNav']}>Settings</a></li>
+                    <li>
+                        {/* <a href="" className={styles['pagesNav']}>Settings</a> */}
+                        <NavLink to='/setting' className={({isActive})=>
+                            isActive ? styles.activePage : styles.pageLink
+                        }>Setting</NavLink>
+                    </li>
                 </ul>
                 <div style={{display: "flex", justifyContent: "space-between", width: '14%'}}>
                     <span className={styles['themeFont']}>Light</span>
                     <div style={{margin:'2% 4%'}}>
                         <label className={styles['switch']} >
-                            <input type="checkbox" onChange={toggleTheme}/>
+                            <input type="checkbox" checked={darkTheme} onChange={toggleTheme}/>
                             <span className={`${styles.slider} ${styles.round}`}></span>
                         </label>
                     </div>

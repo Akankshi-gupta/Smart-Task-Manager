@@ -27,8 +27,10 @@ function Stats(){
                 <Cards whichProject={'Pending Projects'} count={pending}></Cards>
             </div>
             <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                <TasksList divWidth = {'statsWidth'}></TasksList>
-                <div className="d-flex justify-content-center align-items-center ">
+                <div style={{width: '50%'}}>
+                    <TasksList divWidth = {'statsWidth'}></TasksList>
+                </div>
+                <div className="d-flex justify-content-center align-items-center" style={{width: '50%'}}>
                     <div style={{ position: 'relative', width: 300, height: 300 }}>
                         <PieChart
                             width={300}

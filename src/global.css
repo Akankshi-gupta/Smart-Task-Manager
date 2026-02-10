@@ -2,15 +2,56 @@
   /* Light theme */
   --bg-color: #ffffff;
   --text-color: #1f1f1f;
+  --hr-color: rgb(0, 0, 0);
 }
 
 body.dark {
   /* Dark theme */
   --bg-color: #121212;
   --text-color: #eaeaea;
+  --hr-color: gray;
 }
 
 body{
-    background-color: var(--bg-color);
-    color: (var(--text-color));
+  background-color: var(--bg-color);
+  color: (var(--text-color));
+}
+
+.themeBtn{
+  border: 1px solid gray;
+  border-radius: 5px;
+  height: 80%;
+  width: 80%;
+  background: transparent;
+}
+
+.themeBtn img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.themeBtn:hover{
+  border: 2px solid rgb(0, 118, 75);
+}
+
+.themeBtnActive{
+  border: 2px solid rgb(0, 118, 75);
+}
+
+.fontClr{
+  color: var(--text-color);
+}
+
+.hr-color{
+  color: var(--hr-color);
+}
+
+.manageBtn{
+  border: 1px solid rgb(0, 118, 75);
+  padding: 0.5% 2%;
+  background: rgb(0, 118, 75);
+  color: white;
+  border-radius: 6px;
+  width: 15%;
 }
