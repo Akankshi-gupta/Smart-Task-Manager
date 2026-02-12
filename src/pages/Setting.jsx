@@ -1,3 +1,5 @@
+import darkImg from "../assets/dark-theme.png"
+import lightImg from "../assets/light-theme.png"
 
 function Setting({darkTheme, setDarkTheme, setTaskList}){
     function resetApp(){
@@ -20,13 +22,13 @@ function Setting({darkTheme, setDarkTheme, setTaskList}){
             <div className="d-flex" style={{width: '40%'}}>
                 <div style={{textAlign: 'center'}}>
                     <button className={`themeBtn ${darkTheme ? 'themeBtnActive' : ' '}`} onClick={()=>setDarkTheme(true)}>
-                        <img src="/dark-theme.png" alt="" style={{height: '100%', width: '100%'}} />
+                        <img src={darkImg} alt="" style={{height: '100%', width: '100%'}} />
                     </button>
                     <p className="fontClr">Dark</p>
                 </div>
                 <div style={{textAlign: 'center'}}>
                     <button className={`themeBtn ${!darkTheme ? 'themeBtnActive' : ' '}`} onClick={()=>setDarkTheme(false)}>
-                        <img src="/light-theme.png" alt="" style={{height: '100%', width: '100%'}}/>
+                        <img src={lightImg} alt="" style={{height: '100%', width: '100%'}}/>
                     </button>
                     <p className="fontClr">Light</p>
                 </div>
