@@ -77,3 +77,14 @@ This project allows users to create, manage, track, and analyze daily tasks effi
 
 ### ⚙️ Settings Page
 ![Settings Page](public/screenshots/settings.png)
+
+## Dark Mode
+
+### 🏠 Home Page
+![Home Page](public/screenshots/dark-home.png)
+
+### 📊 Stats Page
+![Stats Page](public/screenshots/dark-stats.png)
+
+### ⚙️ Settings Page
+![Settings Page](public/screenshots/dark-setting.png)
