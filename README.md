@@ -1,16 +1,58 @@
-# React + Vite
+📌 Smart Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern task management application built using React and Bootstrap.
+This project allows users to create, manage, track, and analyze daily tasks efficiently with a clean UI and theme customization.
+--------------------------------------------------------------------------------------------------------------
+Tech Stack
 
-Currently, two official plugins are available:
+⚛️ React (Functional Components + Hooks)
+🎨 Bootstrap 5
+📊 MUI X Charts (for Pie Chart visualization)
+💾 LocalStorage (for data persistence)
+--------------------------------------------------------------------------------------------------------------
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🏠 Home Page
+    -Add new tasks
+    -View all tasks in a structured layout
+    -Task status tags:
+        🟡 Pending
+        🔵 In Progress
+        🟢 Completed
+    -Edit existing tasks
+    -Delete tasks
+    -Real-time UI updates
+-------------------------------------------------------------------------------------------------------------
+📊 Stats Page
+    -View total number of tasks
+    -See completed tasks count
+    -Track in-progress tasks
+    -Monitor pending tasks
+    -Interactive Pie Chart showing percentage distribution of tasks
+-------------------------------------------------------------------------------------------------------------
+⚙️ Settings Page
+    -🌗 Toggle between Light and Dark theme
+    -🗑 Clear all tasks
+    -🔄 Reset application (clears tasks and restores default settings)  
+-------------------------------------------------------------------------------------------------------------
+💾 Data Persistence
+    -All tasks are stored in LocalStorage, ensuring that:
+    -Tasks remain saved after page refresh
+    -No backend setup is required     
+-------------------------------------------------------------------------------------------------------------
+🧠 Concepts Used
+    -React Hooks (useState, useEffect)
+    -Conditional Rendering
+    -Component-Based Architecture
+    -Dynamic Styling
+    -State Management
+    -LocalStorage Synchronization    
 
-## React Compiler
+### 🏠 Home Page
+![Home Page](screenshots/Home.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 📊 Stats Page
+![Stats Page](screenshots/Stats.png)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ⚙️ Settings Page
+![Settings Page](screenshots/settings.png)
